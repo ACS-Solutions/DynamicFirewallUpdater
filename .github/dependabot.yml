@@ -1,0 +1,24 @@
+version: 2
+
+# Weekly version updates, one grouped pull request per ecosystem, stable
+# versions only (Dependabot's default). Replaces the weekly dependency routine
+# (claude-hosts#64, this repository's #4).
+updates:
+  - package-ecosystem: nuget
+    directories:
+      - "/**"
+    schedule:
+      interval: weekly
+    groups:
+      nuget:
+        patterns:
+          - "*"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      github-actions:
+        patterns:
+          - "*"
