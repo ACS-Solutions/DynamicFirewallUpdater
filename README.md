@@ -21,7 +21,7 @@ Including the machine name means you can have multiple machines refer to the sam
 Review the template.appsettings.json in the Config folder, and then create your own, plugging in all the guids and names from the Azure Portal.
 
 ## Prerequisites
-You'll need the .NET 8.0 Runtime installed. See https://dotnet.microsoft.com/en-us/download
+You'll need the .NET 11.0 Runtime installed. See https://dotnet.microsoft.com/en-us/download
 
 ## Logging
 The app writes to a log file, but default in %TEMP%. The configuration is in appSettings.json and uses the [Serilog](https://serilog.net/) project so you can follow their guidance if you need to change anything.
